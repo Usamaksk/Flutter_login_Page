@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.blue),
+      debugShowCheckedModeBanner: false,
       home: const LoginPage(),
     );
   }
@@ -91,7 +92,7 @@ class LoginPageState extends State<LoginPage>
                         MaterialButton(
                           height: 50.0,
                           minWidth: 150.0,
-                          color: Colors.green,
+                          color: Colors.blueAccent,
                           splashColor: Colors.teal,
                           textColor: Colors.white,
                           child: const Icon(FontAwesomeIcons.rightFromBracket),
